@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20 Academy - বাংলা</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">20 Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses"><i class="bi bi-gear"></i>Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products"><i class="bi bi-kanban"></i>Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-lightning"></i>About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope"></i>Contact</a></li>
+          <li class="nav-item">
+            <div class="mode-toggle" onclick="toggleMode()" id="modeIcon">🌙</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with animated gradient -->
+  <section id="home" class="hero">
+    <div class="animated-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>শিখুন, গড়ুন ও আয় করুন — ২০ অ্যাকাডেমিতে</h1>
+        <p>লাইভ ক্লাস, রেকর্ডেড ভিডিও ও ডিজিটাল প্রোডাক্ট — সবকিছু বাংলা ভাষায়।</p>
+        <div class="hero-ctas">
+          <a href="#courses" class="btn btn-primary">কোর্স দেখুন</a>
+          <a href="#products" class="btn btn-ghost">প্রোডাক্টস</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-slider">
+          <div class="slide active" style="background-image:url('fold/a1.png');"></div>
+          <div class="slide" style="background-image:url('fold/a2.jpg');"></div>
+          <div class="slide" style="background-image:url('fold/a3.webp');"></div>
+          <div class="slide" style="background-image:url('fold/a4.avif');"></div>
+          <div class="slide" style="background-image:url('fold/a5.avif');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section">
+    <div class="container">
+      <h2 class="section-title glass-title">জনপ্রিয় কোর্স</h2>
+      <div class="grid cards-grid">
+        <article class="card">
+          <h3>ওয়েব ডেভেলপমেন্ট</h3>
+          <p>HTML, CSS, JavaScript - প্রজেক্টভিত্তিক কোর্স।</p>
+          <div class="card-footer">
+            <span class="price">৳ 1200</span>
+            <button class="btn btn-primary buyBtn">কিনুন</button>
+          </div>
+        </article>
+        <article class="card">
+          <h3>ডিজিটাল মার্কেটিং</h3>
+          <p>SEO, Ads, Social Strategy।</p>
+          <div class="card-footer">
+            <span class="price">৳ 1000</span>
+            <button class="btn btn-primary buyBtn">কিনুন</button>
+          </div>
+        </article>
+        <article class="card">
+          <h3>গ্রাফিক ডিজাইন</h3>
+          <p>Photoshop, Illustrator প্রজেক্টসমূহ।</p>
+          <div class="card-footer">
+            <span class="price">৳ 900</span>
+            <button class="btn btn-primary buyBtn">কিনুন</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section alt">
+    <div class="container">
+      <h2 class="section-title glass-title">ডিজিটাল প্রোডাক্ট</h2>
+      <div class="grid cards-grid">
+        <article class="card colorful-card ebook-card" onclick="window.open('ebook.html','_blank')">
+          <h3>📘 ই-বুক: HTML & CSS</h3>
+          <p>প্র্যাকটিস ফাইলসহ সহজ বাংলা ই-বুক।</p>
+          <div class="card-footer">
+            <span class="price">৳ 250</span>
+            <button class="btn btn-primary">দেখুন</button>
+          </div>
+        </article>
+        <article class="card colorful-card template-card" onclick="window.open('indexcr.html','_blank')">
+          <h3>🎨 টেমপ্লেট প্যাক</h3>
+          <p>UI কিট ও ওয়েব টেম্পলেট কালেকশন।</p>
+          <div class="card-footer">
+            <span class="price">৳ 400</span>
+            <button class="btn btn-primary">দেখুন</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title glass-title">আমরা কারা</h2>
+        <p>২০ অ্যাকাডেমি হল একটি বাংলা-ভিত্তিক লার্নিং প্ল্যাটফর্ম যেখানে কোর্স ও ডিজিটাল প্রোডাক্ট মারফত কমিউনিটির মানুষের স্কিল উন্নয়ন ও আয় করার ব্যবস্থা করা হয়।</p>
+      </div>
+      <div class="about-image">
+        <img src="https://via.placeholder.com/600x400" alt="about">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title glass-title">যোগাযোগ করুন</h2>
+      <div class="social-icons">
+        <div class="icon-box">
+          <a href="https://www.facebook.com/profile.php?id=61578930906733" target="_blank"><i class="fab fa-facebook facebook"></i><span>Facebook</span></a>
+        </div>
+        <div class="icon-box">
+          <a href="https://wa.me/8801860788707" target="_blank"><i class="fab fa-whatsapp whatsapp"></i><span>WhatsApp</span></a>
+        </div>
+        <div class="icon-box">
+          <a href="https://t.me/yeasin142" target="_blank"><i class="fab fa-telegram telegram"></i><span>Telegram</span></a>
+        </div>
+        <div class="icon-box">
+          <a href="https://www.youtube.com/@techbd20n" target="_blank"><i class="fab fa-youtube youtube"></i><span>YouTube</span></a>
+        </div>
+        <div class="icon-box">
+          <a href="mailto:yeasin2003214@gmail.com"><i class="fas fa-envelope gmail"></i><span>Gmail</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> 20 Academy বাংলা — সর্বস্বত্ব সংরক্ষিত</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
